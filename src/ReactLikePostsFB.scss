@@ -1,0 +1,154 @@
+.v-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5 {
+    background-color: black;
+    position: relative;
+  }
+  > div {
+    border: 1px solid #ffe8e8;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+    img,
+    video {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+  .col-1 {
+    padding-top: 56.2%;
+    width: 100%;
+  }
+  .col-2,
+  .col-4 {
+    width: calc(50% - 4px);
+    padding-top: 37%;
+  }
+  .col-5 {
+    width: calc(50% - 4px);
+    padding-top: 36%;
+  }
+  .col-3 {
+    width: calc(50% - 4px);
+    padding-top: 35%;
+  }
+  .three {
+    padding-top: 60%;
+    width: 100%;
+  }
+  .three-in-five {
+    width: calc(33.33% - 4px);
+    padding-top: 25%;
+  }
+  .ctn-img-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .bigger-five::after {
+    content: attr(data-index);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.v-container-clone {
+  z-index: 1000;
+  display: flex;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  align-items: center;
+  .main-content {
+    width: calc(100% - 100px);
+    display: flex;
+    .item {
+      max-width: 100%;
+      margin: 0 auto;
+      max-height: 100vh;
+    }
+  }
+  .prev,
+  .next,
+  .close {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: #383838;
+    color: #b0b1b3;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0.3;
+    user-select: none;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .prev {
+    margin-left: 15px;
+  }
+  .next {
+    margin-right: 15px;
+  }
+  .close {
+    position: absolute;
+    top: -41px;
+    right: 15px;
+    font-size: 45px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 15px;
+  }
+
+  .numerical-order {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #b0b1b3;
+    opacity: 0.3;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .only-one {
+    pointer-events: none;
+  }
+}
