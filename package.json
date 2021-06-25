@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "react-like-posts-fb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,5 +37,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "Keywords": [
+    "react like posts facebook",
+    "react images, videos grid"
+  ],
+  "author": "LE KHANH VIET",
+  "license": "LKV",
+  "bin": {
+    "vietdeptrai": "src/App.tsx"
   }
 }

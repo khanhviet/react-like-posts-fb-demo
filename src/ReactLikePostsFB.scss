@@ -130,7 +130,6 @@
     position: absolute;
     bottom: 10px;
     text-align: center;
-    width: 100%;
     z-index: 100;
     color: white;
     font-size: 25px;
@@ -142,8 +141,8 @@
     line-height: 25px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #b0b1b3;
-    opacity: 0.3;
+    background-color: black;
+    opacity: 0.5;
     pointer-events: none;
     user-select: none;
   }
